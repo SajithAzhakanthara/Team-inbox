@@ -1,0 +1,17 @@
+.header {
+  padding: 18px 25px;
+  background-color: #fff;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__info-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__info-item {
+  padding-left: 30px;
+}/*# sourceMappingURL=header.css.map */

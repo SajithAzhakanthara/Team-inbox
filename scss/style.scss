@@ -1,0 +1,38 @@
+@import "./variables.scss";
+@import "./sidebar.scss";
+@import "./header.scss";
+@import "./inbox-list.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+span,a {
+    display:inline-block;
+}
+
+.main-inbox-section {
+    width:calc(100% - 65px);
+    min-height:100vh;
+    margin-left: 65px;
+    background-color: #EBECF1;
+}
+
+.chat-details-wrap {
+    display: flex;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.inbox-wrap {
+    background-color: #fff;
+    flex-basis: 30%;
+}

@@ -1,0 +1,17 @@
+.header{
+    padding: 18px 25px;
+    background-color: #fff;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__info-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__info-item {
+        padding-left: 30px;
+    }
+}

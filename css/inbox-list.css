@@ -1,0 +1,16 @@
+.inbox-list-wrap {
+  flex-basis: 30%;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.inbox-list-header {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+.inbox-list-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=inbox-list.css.map */
