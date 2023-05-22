@@ -57,7 +57,10 @@
 
        <section class="header">
            <div class="header__inner">
-              <div class="header__left"></div>
+              <div class="header__left">
+                <img src="assets/header-icons/sidebar-toggle.svg" class="header__sidebar-toggle" alt="">
+                <h3 class="header__title">Team Inbox</h3>
+              </div>
               <div class="header__right">
                 <div class="header__info">
                    <ul class="header__info-items">
@@ -123,6 +126,11 @@
                             <li class="inbox-list-header__right-item">
                                 <div class="inbox-list-header__right-icon-wrap">
                                     <img src="assets/inbox-icons/icon-1.svg" alt="">
+                                </div>
+                            </li>
+                            <li class="inbox-list-header__right-item inbox-list-header__right-item--mobile">
+                                <div class="inbox-list-header__right-icon-wrap">
+                                    <img src="assets/inbox-icons/mob-profile-info.svg" alt="">
                                 </div>
                             </li>
                         </ul>
@@ -238,16 +246,91 @@
             <div class="full-message__inner">
                 <div class="full-message__header">
                     <div class="full-message__header-inner">
-                        <div class="full-message__header-right"></div>
+                        <div class="full-message__header-right">
+                            <div class="full-message__header-profile">
+                                <button class="full-message__header-left-button-assign full-message__header-left-button-assign--small-mobile">
+                                    <img class="full-message__header-left-button-image" src="assets/inbox-icons/ArrowLeft.svg" alt="">
+                                </button>
+                                <button class="full-message__header-profile-button">
+                                    <span class="full-message__header-profile-image-wrap">
+                                        <img src="assets/inbox-icons/profile-image-2-small.svg" class="full-message__header-profile-image" alt="">
+                                        <img src="assets/inbox-icons/facebook-small.svg" class="full-message__header-profile-social-icon" alt="">
+                                    </span>
+                                    <label for="" class="full-message__header-profile-button-text">Amanda_hug</label>
+                                </button>
+                            </div>
+                        </div>
                         <div class="full-message__header-left">
                             <div class="full-message__header-left-button-wrap">
-                                <button class="full-message__header-left-button-assign">
+                                <button class="full-message__header-left-button-assign full-message__header-left-button-assign-to-agent">
                                     <img class="full-message__header-left-button-image" src="assets/inbox-icons/assign-btn-image.svg" alt="">
-                                    <span class="full-message__header-left-button-text">Reopen</span>
+                                    <span class="full-message__header-left-button-text">Assign</span>
                                 </button>
                                 <button class="full-message__header-left-button-reopen">
                                     <img class="full-message__header-left-button-image" src="assets/inbox-icons/ArrowUDownLeft.svg" alt="">
                                     <span class="full-message__header-left-button-text">Reopen</span>
+                                </button>
+                                <button class="full-message__header-left-button-assign full-message__header-left-button-assign--mobile">
+                                    <img class="full-message__header-left-button-image" src="assets/inbox-icons/ArrowLeft.svg" alt="">
+                                    <span class="full-message__header-left-button-text">Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-message-main__wrap">
+                    <ul class="full-message-main__items">
+                        <li class="full-message-main__item full-message-main__item--reciever">
+                           <div class="full-message-main__item-sender-profile">
+                              <img src="assets/inbox-icons/profile-image-2-small.svg" class="full-message-main__item-sender-image" alt="">
+                              <label for="" class="full-message-main__item-sender-name-time">Amanda hug, 18:15</label>
+                           </div>
+                           <div class="full-message-main__item-messages">
+                            <p class="full-message-main__item-message-text">Hello! Finally found the time to write to you) I need your help in creating interactive animations</p>
+                           </div>
+                           <div class="full-message-main__item-messages">
+                            <p class="full-message-main__item-message-text">Can I send you files?</p>
+                           </div>
+                        </li>
+                        <li class="full-message-main__item full-message-main__item--sender">
+                            <div class="full-message-main__item-sender-profile">
+                               <img src="assets/inbox-icons/seen-check.svg" class="full-message-main__item-sender-image" alt="">
+                               <label for="" class="full-message-main__item-sender-name-time">Steven Paul, 18:00</label>
+                            </div>
+                            <div class="full-message-main__item-messages">
+                             <p class="full-message-main__item-message-text">Sure I will assist you</p>
+                            </div>
+                         </li>
+                         <li class="full-message-main__item full-message-main__item--reciever">
+                            <div class="full-message-main__item-sender-profile">
+                               <img src="assets/inbox-icons/profile-image-2-small.svg" class="full-message-main__item-sender-image" alt="">
+                               <label for="" class="full-message-main__item-sender-name-time">Amanda hug, 18:15</label>
+                            </div>
+                            <div class="full-message-main__item-messages">
+                             <p class="full-message-main__item-message-text">Thank you</p>
+                            </div>
+                         </li>
+                    </ul>
+                </div>
+                <div class="message-textarea">
+                    <div class="message-textarea__inner">
+                        <textarea class="message-textarea__textarea" placeholder="Shift + Enter to add a new line; Start with 'Shift + #' to select a Stored Response"></textarea>
+                        <div class="message-textarea__button-outer">
+                            <div class="message-textarea__button-left-wrap">
+                                <button class="message-textarea__button-add-element">
+                                    <img src="assets/inbox-icons/plus-icon.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="message-textarea__button-right-wrap">
+                                <button class="message-textarea__button-privatenote">
+                                    <img src="assets/inbox-icons/private-message-ico.svg" alt="">
+                                    <label for="">Send as private note</label>
+                                </button>
+                                <button class="message-textarea__button-smiley">
+                                    <img src="assets/inbox-icons/Emoji-icon.svg" alt="">
+                                </button>
+                                <button class="message-textarea__button-send-message">
+                                    <img src="assets/inbox-icons/send-message-icon.svg" alt="">
                                 </button>
                             </div>
                         </div>
@@ -256,6 +339,53 @@
             </div>
           </div>
  <!-- #################### full message section ends ########################### -->
+ <!-- #################### profile detail starts ########################### -->
+         <div class="profile-detail">
+            <div class="profile-detail-inner">
+                <div class="profile-info">
+                    <div class="profile-info__image">
+                        <img src="assets/inbox-icons/avatar-big.svg" alt="">
+                    </div>
+                    <h6 class="profile-info__name">Amanda Hug</h6>
+                    <p class="profile-info__location">
+                        <img src="assets/inbox-icons/location.svg" alt="">
+                        <label for="" class="profile-info__location-text">Location</label>
+                    </p>
+                    <p class="profile-info__email">
+                        <img src="assets/inbox-icons/message.svg" alt="">
+                        <label for="" class="profile-info__email-text">name@example.com</label>
+                    </p>
+                    <p class="profile-info__phone">
+                        <img src="assets/inbox-icons/phone.svg" alt="">
+                        <label for="" class="profile-info__phone-text">+1 6573456228</label>
+                    </p>
+                    <div class="profile-info__identifier">
+                        <label for="" class="profile-info__identifier-label">Identifier: Not Available</label>
+                        <img src="assets/inbox-icons/CopySimple.svg" class="profile-info__identifier-image" alt="">
+                    </div>
+                </div>
+                <div class="chat-update">
+                    <div class="chat-update__inner">
+                        <h6 class="chat-update__header">
+                            <span class="chat-update__left">
+                                <img src="assets/inbox-icons/chat-update-icon.svg" alt="" class="chat-update__header-icon">
+                                <label for="" class="chat-update__header-text">Chat Update</label>
+                            </span>
+                            <img src="assets/inbox-icons/arrow-up.svg" alt="" class="chat-update__toggle-icon">
+                        </h6>
+                        <div class="chat-update__username">
+                            <div class="inbox-list__item-message-source inbox-list__item-message-source--facebook">
+                                <img src="assets/inbox-icons/chat-update-username.svg" alt="" class="inbox-list__item-message-source-image">
+                                <label for="" class="inbox-list__item-message-sender">Amanda123</label>
+                            </div>
+                        </div>
+                        <p class="chat-update__last-seen">Last seen: 13/03/2022 11:31AM</p>
+                        <p class="chat-update__created-on">Created on: 13/03/2022 11:31AM</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+ <!-- ####################  profile detail ends ########################### -->
        </div>
 
     </section>

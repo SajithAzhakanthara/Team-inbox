@@ -2,6 +2,12 @@
   padding: 18px 25px;
   background-color: #fff;
 }
+.header__title {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 0;
+}
 .header__inner {
   display: flex;
   align-items: center;
@@ -14,4 +20,17 @@
 }
 .header__info-item {
   padding-left: 30px;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.header__sidebar-toggle {
+  margin-right: 15px;
+}
+
+@media (min-width: 1200px) {
+  .header__sidebar-toggle {
+    display: none;
+  }
 }/*# sourceMappingURL=header.css.map */

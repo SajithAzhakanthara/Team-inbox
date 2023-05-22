@@ -1,6 +1,12 @@
 .header{
     padding: 18px 25px;
     background-color: #fff;
+    &__title {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 500;
+        margin: 0;
+    }
     &__inner {
         display: flex;
         align-items: center;
@@ -13,5 +19,18 @@
     }
     &__info-item {
         padding-left: 30px;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+    &__sidebar-toggle {
+        margin-right: 15px;
+    }
+}
+
+@media(min-width:1200px) {
+    .header__sidebar-toggle {
+        display: none;
     }
 }
