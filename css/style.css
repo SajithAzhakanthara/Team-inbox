@@ -672,6 +672,7 @@ span, a {
 .main-inbox-section.show {
   margin-left: 65px;
   transition: all ease 0.5s;
+  width: calc(100% - 65px);
 }
 
 .sidebar.show {
@@ -686,6 +687,12 @@ span, a {
   }
   .main-inbox-section {
     margin-left: 0;
+    width: 100%;
     transition: all ease 0.5s;
+  }
+}
+@media (max-width: 767px) {
+  .header__title {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
